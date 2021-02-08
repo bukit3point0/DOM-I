@@ -95,7 +95,7 @@ document.querySelector("#middle-img").setAttribute("src", siteContent["main-cont
 const contactP = document.querySelectorAll(".contact p");
 
 document.querySelector(".contact h4").innerText = siteContent["contact"]["contact-h4"];
-contactP[0].innerHTML = siteContent["contact"]["address"];
+contactP[0].innerHTML = siteContent["contact"]["address"].split("t S").join("t<br>S");
 contactP[1].innerText = siteContent["contact"]["phone"];
 contactP[2].innerText = siteContent["contact"]["email"];
 
